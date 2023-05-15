@@ -1,0 +1,241 @@
+<div class="flex justify-between p-10 font-sans ">
+  <!----left side start -->
+  <div class="shadow-lg rounded-b-3xl w-72 h-[700]
+  bg-spinbg font-semibold">
+    <div class="p-3 rounded-t-3xl bg-cyan_blue">
+      <p class="text-sm text-spintext">Winner</p>
+    </div>
+    <div class="p-3 px-2 divide-y divide-blue1 divide-opacity-25 ">
+      <div class=" text-end" *ngFor="let item of spindata">
+        <div class="flex items-center gap-1 text-sm font-semibold opacity-0">
+          <img src="{{item.image}}" class=" w-14 h-14">
+          <span class="pt-2 text-spintext">{{item.name}}</span>
+        </div>
+        <small><a class="underline opacity-0 text-text2">{{item.text}}</a></small>
+        <p>{{item.textp}}</p>
+      </div>
+    </div>
+  </div> <!----left side end --> <!----mid side start -->
+  <div class=" w-[828]" *ngIf="win">
+    <h1 class="text-5xl leading-none text-center text-text2 font-Cutefont" *ngIf="showpic">Welcom to <span
+        class="text-blue1">Play
+        Kudoboard</span>
+
+    </h1>
+    <h1 class="text-5xl leading-none text-center text-text2 font-Cutefont" *ngIf="!showpic">Good Luck, <span
+        class="text-blue1">Karla</span></h1>
+    <p class="-mt-1 text-sm text-center text-text2" *ngIf="showpic">Let the facilitator choose a spinner</p>
+
+    <div class="">
+      <img src="../assets/spin.png" alt="" class="mx-auto mt-5 mb-5" *ngIf="showpic" (click)="winopen()">
+      <img src="../assets/Kerla.png" alt="" class="mx-auto mt-5 mb-5" *ngIf="!showpic">
+      <div class="flex justify-between gap-8">
+        <div> <img src="../assets/arr1.png" alt="" class="mt-4 w-9"></div>
+        <div class="flex items-center gap-3 ">
+          <div> <img src="../assets/card/tlogo3.png"></div>
+          <div> <img src="../assets/card/tlogo4.png"></div>
+          <div> <img src="../assets/card/tlogo5.png"></div>
+          <div> <img src="../assets/card/tlogo6.png"></div>
+          <div> <img src="../assets/card/tlogo6.png"></div>
+        </div>
+        <div> <img src="../assets/arr2.png" alt="" class="w-6 mt-3"></div>
+      </div>
+      <p class="w-full border-2 border-solid border-text2"></p>
+      <div class="mt-4 text-center">
+        <button class="p-5 bg-white rounded-full shadow-lg" *ngIf="showpic"><img src="../assets/profile.png"
+            alt=""></button>
+        <br><small class="text-text2" *ngIf="showpic">Choose Spinner</small>
+        <button class="bg-white rounded-full shadow-lg " *ngIf="!showpic">
+          <img src="../assets/p2.png" alt=""></button>
+        <br><small class="text-text2" *ngIf="!showpic">Karla Svensson</small>
+      </div>
+      <button class="absolute p-2 px-4 text-sm text-white rounded-full -bottom-32 left-96 bg-blue1" routerLink="/">
+        << Back to Board view</button>
+    </div>
+
+  </div>
+
+  <div class="w-[828] win" *ngIf="!win">
+    <img src="../assets/winpic.png">
+    <div class="p-5 mx-8 bg-white shadow-lg rounded-3xl ">
+      <div class="grid w-full grid-cols-2 pl-4 border border-solid rounded-3xl p-7 border-text1 gap-y-8 gap-x-5">
+        <div class="relative max-w-sm bg-white rounded-md shadow-lg" id="sideBarBtn">
+          <div class="absolute flex items-center justify-between w-full px-1 mt-3">
+            <img src="../assets/card/card1pic.png" class="z-10 w-14">
+            <p class="z-10 -mt-10 text-3xl text-white font-Cutefont pl-11">Totally Awesome</p>
+            <img src="../assets/card/card1logo.png" class="z-10 -mt-10 w-19">
+          </div>
+          <div class="relative max-w-sm">
+            <div class="absolute top-0 right-0 text-right ">
+              <img src="../assets/card/card1.png" class="relative h-16 rounded-r-md">
+            </div>
+
+            <div class="px-3 pt-20 pr-5">
+              <p class="text-xs text-justify text-text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate fugiat,
+                deserunt
+                voluptatem pariatur
+                porro magnam quos tempore eius at, animi non necessitatibus. A maxime vitae dolorum, quod neque sed
+                aspernatur?</p>
+            </div>
+            <div class="right-0 text-right ">
+              <img src="../assets/card/card1b.png" class="relative h-20 rounded-rb-md">
+            </div>
+            <div class="absolute bottom-0 flex items-center justify-between w-full px-3">
+              <div class="flex items-center gap-3 mt-6">
+                <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
+                    class="w-4">2</button>
+                <button class="flex items-center text-sm text-text1"><img src="../assets/card/msg.png"
+                    class="w-4">5</button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+              </div>
+              <div>
+                <img src="../assets/card/card1pic2.png" class="rounded-full w-14">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="relative max-w-sm bg-white rounded-md shadow-lg" id="sideBarBtn">
+          <div class="absolute flex items-center justify-between w-full px-1 mt-3">
+            <img src="../assets/card/blogo2.png" class="z-10 w-14">
+
+            <p class="absolute z-20 w-full text-3xl text-center text-white -mt-14 font-Cutefont">Congratulations</p>
+            <img src="../assets/card/card1ticon2.png" class="right-0 z-10 w-32 -mt-10 h-28">
+          </div>
+          <div class="relative max-w-sm">
+            <div class="absolute top-0 right-0 text-right ">
+              <img src="../assets/card/card2.png" class="relative h-16 rounded-r-md">
+            </div>
+
+            <div class="px-3 pt-20 pr-5">
+              <p class="text-xs text-justify text-text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate fugiat,
+                deserunt
+                voluptatem pariatur
+                porro magnam quos tempore eius at, animi non necessitatibus. A maxime vitae dolorum, quod neque sed
+                aspernatur?</p>
+            </div>
+            <div class="right-0 text-right ">
+              <img src="../assets/card/card2b.png" class="relative h-20 rounded-rb-md">
+            </div>
+            <div class="absolute bottom-0 flex items-center justify-between w-full px-3">
+              <div class="flex items-center gap-3 mt-6">
+                <button class="flex items-center text-sm text-danger-600"><img src="../assets/card/heartr.png"
+                    class="w-4">3</button>
+                <button class="flex items-center text-sm text-text1"><img src="../assets/card/msg.png"
+                    class="w-4">5</button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+              </div>
+              <div>
+                <img src="../assets/card/blogo2.png" class="rounded-full w-14">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="relative max-w-sm bg-white rounded-md shadow-lg" id="sideBarBtn">
+          <div class="absolute flex items-center justify-between w-full px-1 mt-3">
+            <img src="../assets/card/tlogo3.png" class="z-10 w-14">
+            <p class="z-10 pl-8 text-4xl text-white -mt-9 font-Cutefont">Proud</p>
+            <img src="../assets/card/icon3.png" class="z-10 -mt-8 w-19">
+          </div>
+          <div class="relative max-w-sm">
+            <div class="absolute top-0 right-0 text-right ">
+              <img src="../assets/card/card3.png" class="relative h-16 rounded-r-md">
+            </div>
+
+            <div class="px-3 pt-20 pr-5">
+              <p class="text-xs text-justify text-text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate fugiat,
+                deserunt
+                voluptatem pariatur
+                porro magnam quos tempore eius at, animi non necessitatibus. A maxime vitae dolorum, quod neque sed
+                aspernatur?</p>
+            </div>
+            <div class="right-0 text-right ">
+              <img src="../assets/card/card3b.png" class="relative h-20 rounded-rb-md">
+            </div>
+            <div class="absolute bottom-0 flex items-center justify-between w-full px-3">
+              <div class="flex items-center gap-3 mt-6">
+                <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
+                    class="w-4">2</button>
+                <button class="flex items-center text-sm text-text1"><img src="../assets/card/msg.png"
+                    class="w-4">5</button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+              </div>
+              <div>
+                <img src="../assets/card/blogo3.png" class="rounded-full w-14">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="relative max-w-sm bg-white rounded-md shadow-lg" id="sideBarBtn">
+          <div class="absolute flex items-center justify-between w-full px-1 mt-3">
+            <img src="../assets/card/tlogo4.png" class="z-10 w-14">
+            <p class="z-10 pl-8 text-4xl text-white -mt-9 font-Cutefont">Great Job</p>
+            <img src="../assets/card/icon4.png" class="z-10 -mt-8 w-19">
+          </div>
+          <div class="relative max-w-sm">
+            <div class="absolute top-0 right-0 text-right ">
+              <img src="../assets/card/card4.png" class="relative h-16 rounded-r-md">
+            </div>
+
+            <div class="px-3 pt-20 pr-5">
+              <p class="text-xs text-justify text-text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate fugiat,
+                deserunt
+                voluptatem pariatur
+                porro magnam quos tempore eius at, animi non necessitatibus. A maxime vitae dolorum, quod neque sed
+                aspernatur?</p>
+            </div>
+            <div class="right-0 text-right ">
+              <img src="../assets/card/card4b.png" class="relative h-20 rounded-rb-md">
+            </div>
+            <div class="absolute bottom-0 flex items-center justify-between w-full px-3">
+              <div class="flex items-center gap-3 mt-6">
+                <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
+                    class="w-4">2</button>
+                <button class="flex items-center text-sm text-text1"><img src="../assets/card/msg.png"
+                    class="w-4">5</button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+                <button><img src="../assets/card/pic.png" class="w-4"></button>
+              </div>
+              <div>
+                <img src="../assets/card/blogo4.png" class="rounded-full w-14">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="flex justify-between mx-4 mt-3">
+      <button class="p-2 px-4 text-sm text-white rounded-full bg-blue1" routerLink="/">
+        << Back to Board view</button>
+          <button class="p-2 px-4 text-sm text-white rounded-full bg-blue1" (click)="back()">
+            Spin again</button>
+    </div>
+  </div>
+  <!----mid side end --> <!----right side start -->
+  <div class="shadow-lg rounded-b-3xl w-72 h-[700] bg-spinbg ">
+    <div class="p-3 font-semibold rounded-t-3xl bg-cyan_blue">
+      <p class="text-sm text-spintext">Players</p>
+    </div>
+    <div class="p-3 px-2 divide-y divide-blue1 divide-opacity-25 ">
+      <div class=" text-end" *ngFor="let item of spindata  let i =index">
+        <div class="flex items-center gap-1 text-sm font-semibold " *ngIf="i < 8">
+          <img src="{{item.image}}" class=" w-14 h-14">
+          <span class="pt-2 text-spintext">{{item.name}} </span>
+        </div>
+        <small class="underline cursor-pointer text-text2" *ngIf="i < 8" (click)="show()">{{item.text}}</small>
+        <p *ngIf="i < 8">{{item.textp}}</p>
+      </div>
+    </div>
+  </div> <!----right side end -->
+</div>

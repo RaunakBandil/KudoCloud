@@ -29,10 +29,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": ["./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+            "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/jquery/dist/jquery.min.js",
+            "./node_modules/owl.carousel/dist/owl.carousel.min.js"]
           },
           "configurations": {
             "production": {
@@ -92,13 +94,18 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": [ "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+            "node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/jquery/dist/jquery.min.js",
+            "./node_modules/owl.carousel/dist/owl.carousel.min.js"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "99c2fdc2-5578-493b-a896-4df45664832c"
   }
 }
