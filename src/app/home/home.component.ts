@@ -223,17 +223,31 @@ export class HomeComponent {
     this.mybtn2 = true
   }
   selectbox = true
-  showHidePan() {
+  showHidePan(any: string) {
     let checkbox = document.getElementById('check');
     let pan_input = document.getElementById('card1check');
-    let div1 = document.getElementById("mySidebar");
-    if (checkbox instanceof HTMLInputElement && checkbox.checked) {
-      console.log("unchecked")
-    } else {
-      pan_input!.style.background = "rgb(104 150 207)";
-      pan_input!.style.padding = "0.5rem 0.75rem";
-      this.selectbox = false
+    let pan_input1 = document.getElementById('card11check');
+    let div1 = document.getElementById("mySidebar")
+    switch (any) {
+      case 'first':
+        if (checkbox instanceof HTMLInputElement && checkbox.checked) {
+          console.log("unchecked")
+        } else {
+          pan_input!.style.background = "rgb(104 150 207)";
+          pan_input!.style.padding = "0.5rem 0.75rem";
+          this.selectbox = false
+        }
+        break;
+      case 'second':
+        if (checkbox instanceof HTMLInputElement && checkbox.checked) {
+          console.log("unchecked")
+        } else {
+          pan_input1!.style.background = "rgb(104 150 207)";
+          pan_input1!.style.padding = "0.5rem 0.75rem";
+          this.selectbox = false
+        }
     }
+
   }
   showHidePan2() {
     let checkbox = document.getElementById('check2');
@@ -315,6 +329,7 @@ export class HomeComponent {
     let pan_input6 = document.getElementById('card6check');
     let pan_input7 = document.getElementById('card7check');
     let pan_input8 = document.getElementById('card8check');
+    let pan_input11 = document.getElementById('card11check');
     pan_input!.style.background = "transparent";
     pan_input2!.style.background = "transparent";
     pan_input3!.style.background = "transparent";
@@ -323,6 +338,7 @@ export class HomeComponent {
     pan_input6!.style.background = "transparent";
     pan_input7!.style.background = "transparent";
     pan_input8!.style.background = "transparent";
+    pan_input11!.style.background = "transparent";
     pan_input!.style.padding = "0rem";
     pan_input2!.style.padding = "0rem";
     pan_input3!.style.padding = "0rem";
@@ -331,6 +347,7 @@ export class HomeComponent {
     pan_input6!.style.padding = "0rem";
     pan_input7!.style.padding = "0rem";
     pan_input8!.style.padding = "0rem";
+    pan_input11!.style.padding = "0rem";
     this.selectbox = true
 
   }

@@ -379,42 +379,48 @@
           (click)="closebtn()">x</button>
 
       </div>
-    </div> <img src="../assets/dropdown.png" class="absolute h-24 -mt-24 -ml-3 w-50">
+    </div> <img src="../assets/NewsAnnounce.svg" class="absolute h-24 -mt-24 -ml-3 w-50">
     <!------------- cards start ---------------->
     <div class="pt-8 rounded-b-3xl bg-light_color px-7 pb-7">
       <div class="grid grid-cols-4 gap-y-7 gap-x-4">
+
         <div class="transition-all bg-transparent rounded-md" id="card1check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
                 <div
-                  class="absolute z-0 p-1 pr-5 -mt-1 transition duration-75 ease-in bg-white rounded-full shadow-md pl-11 tooltiptext left-5 hover:hidden">
+                  class="absolute z-0 flex justify-between gap-2 p-1 -mt-1 transition duration-75 ease-in bg-white rounded-full shadow-md pl-11 tooltiptext left-5 hover:hidden">
+                  <div>
+                    <p class="m-0 text-xs">Patty&nbsp;Kerri</p>
+                    <p class="m-0 text-xs text-C1">patty.kerri@archibo.de</p>
+                  </div>
+                  <div>
+                    <button class="p-1 text-white rounded-r-full bg-C1">TO</button>
+                  </div>
 
-                  <p class="m-0 text-xs">Patty&nbsp;Kerri</p>
-                  <p class="m-0 text-xs text-C2">patty.kerri@archibo.de</p>
                 </div>
                 <img src="../assets/card/card1pic.png" class="z-10 w-16 -mt-4 hover:z-30 hover:relative" id="check"
-                  (click)="showHidePan()">
+                  (click)="showHidePan('first')">
               </div>
-              <p class="absolute z-20 w-full -mt-10 text-3xl text-center text-white font-Cutefont">Totally&nbsp;Awesome
+              <p class="absolute z-20 w-full px-2 text-3xl text-center text-white -mt-11 font-Cutefont">
+                Totally&nbsp;Awesome
               </p>
-              <img src="../assets/card/card1logo.png" class="right-0 z-10 -mt-10">
+              <img src="../assets/card/card1logo.png" class="right-0 z-10 -mt-11">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card1.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop.svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
+
               <div class="px-3 pt-20 pr-5" id="sideBarbtn" (click)="open_close('first')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card1b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
-                <div class="flex items-center gap-2 mt-6">
+              <img src="../assets/PatternBottom.svg" class="absolute -top-2
+                 rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
+                <div class="flex items-center gap-2 mt-7">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/msg.png"
@@ -429,10 +435,13 @@
                 </div>
                 <div class="relative z-20 inline-block mt-2 tooltip">
                   <div
-                    class="absolute z-0 flex items-center justify-between gap-4 p-1 pl-5 pr-8 mt-2 transition duration-75 ease-in bg-white rounded-full shadow-lg hover:hidden tooltiptext right-5">
+                    class="absolute z-0 flex items-center justify-between gap-4 p-1 pr-8 mt-2 transition duration-75 ease-in bg-white rounded-full shadow-lg hover:hidden tooltiptext right-5">
+                    <div>
+                      <button class="p-1 text-white rounded-l-full bg-C1">from</button>
+                    </div>
                     <div>
                       <p class="m-0 text-xs">Will&nbsp;Smith</p>
-                      <p class="m-0 text-xs text-C2">will.smith@archibo.de</p>
+                      <p class="m-0 text-xs text-C1">will.smith@archibo.de</p>
                     </div>
                   </div>
                   <img src="../assets/card/card1pic2.png" class="z-10 w-14 hover:z-50 hover:relative">
@@ -458,19 +467,17 @@
               <img src="../assets/card/card1ticon2.png" class="right-0 z-10 w-32 -mt-10 h-28">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card2.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (1).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn2" (click)="open_close('second')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card2b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (1).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -516,19 +523,17 @@
               <img src="../assets/card/icon3.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card3.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (2).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn3" (click)="open_close('third')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card3b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (2).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-danger-600"><img src="../assets/card/heartr.png"
                       class="w-4 h-4">3</button>
@@ -553,7 +558,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
         <div class="transition-all bg-transparent rounded-md" id="card4check">
@@ -573,19 +577,17 @@
               <img src="../assets/card/icon4.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card4.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (3).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn4" (click)="open_close('four')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card4b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (3).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -630,19 +632,17 @@
               <img src="../assets/card/icon5.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card5.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (4).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn5" (click)="open_close('five')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card5b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (4).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -687,19 +687,17 @@
               <img src="../assets/card/icon6.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card6.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (5).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn6" (click)="open_close('six')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card6b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (5).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -744,19 +742,17 @@
               <img src="../assets/card/icon7.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card7.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (6).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn7" (click)="open_close('seven')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card7b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (6).svg" class="absolute top-[-0.9rem]
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -801,19 +797,17 @@
               <img src="../assets/card/icon8.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card8.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (7).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn8" (click)="open_close('eight')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card8b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (7).svg" class="absolute top-[-0.9rem]
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -842,7 +836,7 @@
           </div>
         </div>
         <!-----------second cards 8 start -->
-        <div class="transition-all bg-transparent rounded-md" id="card1check">
+        <div class="transition-all bg-transparent rounded-md" id="card11check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
@@ -853,27 +847,27 @@
                   <p class="m-0 text-xs text-C2">patty.kerri@archibo.de</p>
                 </div>
                 <img src="../assets/card/card1pic.png" class="z-10 w-16 -mt-4 hover:z-30 hover:relative" id="check"
-                  (click)="showHidePan()">
+                  (click)="showHidePan('second')">
               </div>
-              <p class="absolute z-20 w-full -mt-10 text-3xl text-center text-white font-Cutefont">Totally&nbsp;Awesome
+              <p class="absolute z-20 w-full px-2 text-3xl text-center text-white -mt-11 font-Cutefont">
+                Totally&nbsp;Awesome
               </p>
-              <img src="../assets/card/card1logo.png" class="right-0 z-10 -mt-10">
+              <img src="../assets/card/card1logo.png" class="right-0 z-10 -mt-11">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card1.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop.svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
+
               <div class="px-3 pt-20 pr-5" id="sideBarbtn" (click)="open_close('first')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card1b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
-                <div class="flex items-center gap-2 mt-6">
+              <img src="../assets/PatternBottom.svg" class="absolute -top-2
+                 rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
+                <div class="flex items-center gap-2 mt-7">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/msg.png"
@@ -900,7 +894,7 @@
             </div>
           </div>
         </div>
-        <div class="transition-all bg-transparent rounded-md" id="card2check">
+        <div class="transition-all bg-transparent rounded-md" id="card21check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
@@ -917,19 +911,17 @@
               <img src="../assets/card/card1ticon2.png" class="right-0 z-10 w-32 -mt-10 h-28">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card2.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (1).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn2" (click)="open_close('second')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card2b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (1).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -958,7 +950,7 @@
 
           </div>
         </div>
-        <div class="transition-all bg-transparent rounded-md" id="card3check">
+        <div class="transition-all bg-transparent rounded-md" id="card31check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
@@ -975,19 +967,17 @@
               <img src="../assets/card/icon3.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card3.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (2).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn3" (click)="open_close('third')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card3b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (2).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-danger-600"><img src="../assets/card/heartr.png"
                       class="w-4 h-4">3</button>
@@ -1012,10 +1002,9 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-        <div class="transition-all bg-transparent rounded-md" id="card4check">
+        <div class="transition-all bg-transparent rounded-md" id="card41check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
@@ -1032,19 +1021,17 @@
               <img src="../assets/card/icon4.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card4.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (3).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn4" (click)="open_close('four')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card4b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (3).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -1072,7 +1059,7 @@
 
           </div>
         </div>
-        <div class="transition-all bg-transparent rounded-md" id="card5check">
+        <div class="transition-all bg-transparent rounded-md" id="card51check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
@@ -1089,19 +1076,17 @@
               <img src="../assets/card/icon5.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card5.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (4).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn5" (click)="open_close('five')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card5b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (4).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -1129,7 +1114,7 @@
 
           </div>
         </div>
-        <div class="transition-all bg-transparent rounded-md" id="card6check">
+        <div class="transition-all bg-transparent rounded-md" id="card61check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
@@ -1146,19 +1131,17 @@
               <img src="../assets/card/icon6.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card6.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (5).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn6" (click)="open_close('six')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card6b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (5).svg" class="absolute -top-2
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -1186,7 +1169,7 @@
 
           </div>
         </div>
-        <div class="transition-all bg-transparent rounded-md" id="card7check">
+        <div class="transition-all bg-transparent rounded-md" id="card71check">
           <div class="relative max-w-md bg-white rounded-md shadow-lg">
             <div class="absolute flex items-center justify-between w-full px-1 mt-3">
               <div class="relative z-30 inline-block tooltip">
@@ -1203,19 +1186,17 @@
               <img src="../assets/card/icon7.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card7.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (6).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn7" (click)="open_close('seven')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card7b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (6).svg" class="absolute top-[-0.9rem]
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
@@ -1260,19 +1241,17 @@
               <img src="../assets/card/icon8.png" class="z-10 -mt-8 w-19">
             </div>
             <div class="relative max-w-sm">
-              <div class="absolute top-0 right-0 text-right ">
-                <img src="../assets/card/card8.png" class="relative h-16 rounded-r-md ">
-              </div>
+              <img src="../assets/PatternTop (7).svg" class="absolute -top-36  w-[3.9rem]
+              rounded-rb-md rotate-[270deg] right-[8.9rem]">
               <div class="px-3 pt-20 pr-5" id="sideBarbtn8" (click)="open_close('eight')">
                 <p class="text-xs text-justify text-text1">Thank you for always being my sides during all the
                   interviews
                   and decision makings in the last sprint. Without you if wouldn't be that easy for me to manage
                   everything. Looking forward for more tasks together :D</p>
               </div>
-              <div class="right-0 text-right ">
-                <img src="../assets/card/card8b.png" class="relative h-20 rounded-rb-md">
-              </div>
-              <div class="absolute bottom-0 flex items-center justify-between w-full pl-3 ">
+              <img src="../assets/PatternBottom (7).svg" class="absolute top-[-0.9rem]
+              rounded-rb-md rotate-[270deg] right-44">
+              <div class="relative bottom-0 flex items-center justify-between w-full pl-3 mt-4 ">
                 <div class="flex items-center gap-2 mt-6">
                   <button class="flex items-center text-sm text-text1"><img src="../assets/card/heart.png"
                       class="w-4 h-4">2</button>
